@@ -2,7 +2,7 @@
 
 Store Link: https://itunes.apple.com/us/app/calm-meditation-relaxation/id1431521616?ls=1&mt=8
 
-<img alt="App Logo" width="200px" src="readme_assets/logo.jpg">
+<img alt="App Logo" width="200px" src="readme_assets/logo.png">
 
 
 # About
@@ -14,7 +14,7 @@ Relax and enjoy the sounds of nature while focusing on your breathing.
 Earn Achievements: Unlock badges and level up as you enjoy your relaxing meditation sessions. Gamify the achieving of your balance through meditation.
 
 
-# In essence, use Calm Meditation to;
+# In essence, use Calm Meditation to
 - Sleep better,
 - Calm your anxiety,
 - Slay your stress,
@@ -22,7 +22,7 @@ Earn Achievements: Unlock badges and level up as you enjoy your relaxing meditat
 - Breathe more mindfully.
 
 
-# Use Calm Meditation;
+# Use Calm Meditation
 - During your morning meditation,
 - For your nightly meditation before bed,
 - To strengthen your focus,
