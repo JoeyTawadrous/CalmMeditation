@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P2x-M5-mBR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamProBold.ttf">
+            <string>GothamPro-Bold</string>
+        </array>
+        <array key="GothamProMedium.ttf">
+            <string>GothamPro-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Run Meditation-->
+        <scene sceneID="ayM-sF-MGN">
+            <objects>
+                <viewController storyboardIdentifier="RunMeditation" id="cqc-fv-wL6" customClass="RunMeditation" customModule="CalmMeditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jZp-ED-7TF"/>
+                        <viewControllerLayoutGuide type="bottom" id="jgz-ch-l10"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R1E-bU-xag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-t3-ktn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugx-oE-diC">
+                                <rect key="frame" x="15" y="14" width="50" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed" destination="cqc-fv-wL6" eventType="touchUpInside" id="lvR-Uk-8Zz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BREATHE IN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-cG-0Vg">
+                                <rect key="frame" x="16" y="127" width="343" height="54"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMN-4s-0Wx" customClass="LCircleButton" customModule="CalmMeditation" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="521" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="LQt-hH-95K"/>
+                                    <constraint firstAttribute="height" constant="60" id="NjJ-Js-okE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="soundButtonPressed" destination="cqc-fv-wL6" eventType="touchUpInside" id="0CJ-g3-SH6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovI-Dp-dXp" customClass="LCircleButton" customModule="CalmMeditation" customModuleProvider="target">
+                                <rect key="frame" x="225.5" y="528.5" width="45" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4zt-1h-X2p"/>
+                                    <constraint firstAttribute="width" constant="45" id="q40-Or-9LH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseSoundButtonPressed" destination="cqc-fv-wL6" eventType="touchUpInside" id="fZN-jw-fMv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8ue-cG-0Vg" firstAttribute="centerX" secondItem="R1E-bU-xag" secondAttribute="centerX" id="2xf-vG-zWu"/>
+                            <constraint firstItem="IHQ-t3-ktn" firstAttribute="width" secondItem="R1E-bU-xag" secondAttribute="width" id="9Cf-hW-HYf"/>
+                            <constraint firstItem="8ue-cG-0Vg" firstAttribute="top" secondItem="jZp-ED-7TF" secondAttribute="bottom" constant="107" id="9Nq-lj-j0b"/>
+                            <constraint firstItem="ovI-Dp-dXp" firstAttribute="centerY" secondItem="KMN-4s-0Wx" secondAttribute="centerY" id="K0k-NC-mbv"/>
+                            <constraint firstItem="KMN-4s-0Wx" firstAttribute="centerX" secondItem="R1E-bU-xag" secondAttribute="centerX" id="Ov1-lL-6Ed"/>
+                            <constraint firstItem="IHQ-t3-ktn" firstAttribute="height" secondItem="R1E-bU-xag" secondAttribute="height" id="ZLF-mJ-xuf"/>
+                            <constraint firstItem="jgz-ch-l10" firstAttribute="top" secondItem="KMN-4s-0Wx" secondAttribute="bottom" constant="86" id="fc5-Dk-hO6"/>
+                            <constraint firstItem="ovI-Dp-dXp" firstAttribute="leading" secondItem="KMN-4s-0Wx" secondAttribute="trailing" constant="8" id="l8i-xE-BC4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kxb-v2-b51"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="IHQ-t3-ktn" id="xPU-va-3Ks"/>
+                        <outlet property="chooseSoundButton" destination="ovI-Dp-dXp" id="1wj-N4-dWW"/>
+                        <outlet property="soundButton" destination="KMN-4s-0Wx" id="sQb-Vi-D50"/>
+                        <outlet property="titleLabel" destination="8ue-cG-0Vg" id="BUu-Dr-Ifs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Msf-td-Liw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="167"/>
+        </scene>
+        <!--Meditation-->
+        <scene sceneID="2kQ-Aq-96d">
+            <objects>
+                <viewController storyboardIdentifier="Meditation" id="P2x-M5-mBR" customClass="Meditation" customModule="CalmMeditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lXR-Bk-S4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="xom-tr-8Lz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e4q-i6-XhB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf5-In-aIC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Calm Meditation" id="ZXf-iK-SSC">
+                                        <barButtonItem key="rightBarButtonItem" width="15" style="done" id="pSA-wm-e3v">
+                                            <color key="tintColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="menuButtonPressed:" destination="P2x-M5-mBR" id="9rB-Ev-d61"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-We-GOG">
+                                <rect key="frame" x="1" y="69" width="375" height="91"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kwg-78-yDP">
+                                    <size key="itemSize" width="70" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="meditationCollectionViewCell" id="AJl-0K-HzP" customClass="MeditationCollectionViewCell" customModule="CalmMeditation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-sx-VdB" customClass="LCircleImageView" customModule="CalmMeditation" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="45" height="45"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1N1-sx-VdB" firstAttribute="top" secondItem="AJl-0K-HzP" secondAttribute="top" constant="8" id="DrS-nD-Mtr"/>
+                                            <constraint firstAttribute="bottom" secondItem="1N1-sx-VdB" secondAttribute="bottom" constant="7" id="TUo-1a-7FT"/>
+                                            <constraint firstItem="1N1-sx-VdB" firstAttribute="leading" secondItem="AJl-0K-HzP" secondAttribute="leading" constant="8" id="Zvc-qu-Ydf"/>
+                                            <constraint firstAttribute="trailing" secondItem="1N1-sx-VdB" secondAttribute="trailing" constant="7" id="tQe-Mq-kCk"/>
+                                        </constraints>
+                                        <size key="customSize" width="60" height="60"/>
+                                        <connections>
+                                            <outlet property="containerImageView" destination="1N1-sx-VdB" id="kHc-pw-IeZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="P2x-M5-mBR" id="oij-qZ-pbu"/>
+                                    <outlet property="delegate" destination="P2x-M5-mBR" id="KvW-2E-F54"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-7k-mzR">
+                                <rect key="frame" x="40" y="168" width="296" height="1"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISE ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84X-5l-hnn">
+                                <rect key="frame" x="15" y="189" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="14"/>
+                                <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="• Reduce stress •" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXs-L9-Qzf">
+                                <rect key="frame" x="23" y="209" width="328" height="17"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mm-gF-sab">
+                                <rect key="frame" x="40" y="288" width="296" height="1"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MdK-cq-4XU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Breathe in through the nose for a count of 4.  2. Breathe out through the nose for a count of 4." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIN-UK-lQC">
+                                <rect key="frame" x="55" y="289" width="264" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="KHt-Te-F67"/>
+                                    <constraint firstAttribute="width" constant="264" id="dXX-2D-aCM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="14"/>
+                                <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-7K-avg" customClass="LCircleButton" customModule="CalmMeditation" customModuleProvider="target">
+                                <rect key="frame" x="147" y="562" width="80" height="79"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="YMb-bD-z3E"/>
+                                    <constraint firstAttribute="width" constant="80" id="coL-18-qM9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="P2x-M5-mBR" eventType="touchUpInside" id="DT2-eb-5X6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equal Breathing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roi-Vx-25F">
+                                <rect key="frame" x="111" y="242" width="153" height="22"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="19"/>
+                                <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMo-9b-tnD" customClass="LCircleButton" customModule="CalmMeditation" customModuleProvider="target">
+                                <rect key="frame" x="94" y="579" width="45" height="45"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="5Xu-1u-StY"/>
+                                    <constraint firstAttribute="height" constant="45" id="hap-dS-xCj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="achievementsButtonPressed" destination="P2x-M5-mBR" eventType="touchUpInside" id="uci-SL-pC9"/>
+                                    <action selector="goButtonPressed" destination="P2x-M5-mBR" eventType="touchUpInside" id="dLe-Vb-K82"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="roi-Vx-25F" firstAttribute="top" secondItem="bXs-L9-Qzf" secondAttribute="top" constant="33" id="1bo-Lm-X8n"/>
+                            <constraint firstItem="bXs-L9-Qzf" firstAttribute="top" secondItem="84X-5l-hnn" secondAttribute="top" constant="20" id="3N2-cB-tNb"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="top" secondItem="jf5-In-aIC" secondAttribute="bottom" constant="5" id="40O-k0-8PI"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="centerX" secondItem="6mm-gF-sab" secondAttribute="centerX" constant="0.5" id="4HV-0o-ToD"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="centerX" secondItem="Nqm-7K-avg" secondAttribute="centerX" constant="1.5" id="4Ud-zv-Eio"/>
+                            <constraint firstItem="KMo-9b-tnD" firstAttribute="centerY" secondItem="Nqm-7K-avg" secondAttribute="centerY" id="5M1-ET-QzG"/>
+                            <constraint firstItem="84X-5l-hnn" firstAttribute="centerX" secondItem="e4q-i6-XhB" secondAttribute="centerX" constant="-1" id="6W1-mq-WC9"/>
+                            <constraint firstItem="84X-5l-hnn" firstAttribute="top" secondItem="Yda-7k-mzR" secondAttribute="bottom" constant="20" id="6y5-Qm-N16"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="width" secondItem="e4q-i6-XhB" secondAttribute="width" id="7WK-Vq-KgY"/>
+                            <constraint firstItem="Yda-7k-mzR" firstAttribute="centerX" secondItem="e4q-i6-XhB" secondAttribute="centerX" constant="0.5" id="7ke-Y8-hAk"/>
+                            <constraint firstItem="jf5-In-aIC" firstAttribute="leading" secondItem="e4q-i6-XhB" secondAttribute="leading" id="AdC-xg-axZ"/>
+                            <constraint firstItem="84X-5l-hnn" firstAttribute="leading" secondItem="e4q-i6-XhB" secondAttribute="leadingMargin" constant="-1" id="Oa4-78-IZ9"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="centerX" secondItem="Yda-7k-mzR" secondAttribute="centerX" constant="0.5" id="PlE-fy-CU5"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="centerX" secondItem="bXs-L9-Qzf" secondAttribute="centerX" constant="1.5" id="QlS-gX-6gq"/>
+                            <constraint firstItem="DIN-UK-lQC" firstAttribute="top" secondItem="6mm-gF-sab" secondAttribute="bottom" id="RJ4-fM-AGk"/>
+                            <constraint firstItem="84X-5l-hnn" firstAttribute="top" secondItem="Yda-7k-mzR" secondAttribute="top" constant="21" id="Vqv-9e-xkO"/>
+                            <constraint firstItem="84X-5l-hnn" firstAttribute="centerX" secondItem="e4q-i6-XhB" secondAttribute="centerX" constant="-1" id="W8X-qR-3CZ"/>
+                            <constraint firstItem="Yda-7k-mzR" firstAttribute="top" secondItem="v1n-We-GOG" secondAttribute="bottom" constant="8" symbolic="YES" id="WBI-WS-KhA"/>
+                            <constraint firstItem="roi-Vx-25F" firstAttribute="top" secondItem="84X-5l-hnn" secondAttribute="bottom" constant="32" id="Wln-JP-GeL"/>
+                            <constraint firstItem="6mm-gF-sab" firstAttribute="top" secondItem="roi-Vx-25F" secondAttribute="top" constant="46" id="aUu-2m-9GX"/>
+                            <constraint firstItem="Yda-7k-mzR" firstAttribute="leading" secondItem="e4q-i6-XhB" secondAttribute="leadingMargin" constant="24" id="c8N-uP-2ba"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="top" secondItem="lXR-Bk-S4R" secondAttribute="bottom" constant="49" id="fH8-t6-2Gs"/>
+                            <constraint firstAttribute="trailing" secondItem="jf5-In-aIC" secondAttribute="trailing" id="jgP-S4-ZWQ"/>
+                            <constraint firstItem="Yda-7k-mzR" firstAttribute="top" secondItem="lXR-Bk-S4R" secondAttribute="bottom" constant="148" id="lYW-79-cPS"/>
+                            <constraint firstItem="Nqm-7K-avg" firstAttribute="leading" secondItem="KMo-9b-tnD" secondAttribute="trailing" constant="8" symbolic="YES" id="pXv-wd-PBs"/>
+                            <constraint firstItem="Nqm-7K-avg" firstAttribute="top" secondItem="DIN-UK-lQC" secondAttribute="bottom" constant="14" id="qBW-Gd-sgz"/>
+                            <constraint firstItem="KMo-9b-tnD" firstAttribute="top" secondItem="DIN-UK-lQC" secondAttribute="bottom" constant="31" id="qll-FN-tKw"/>
+                            <constraint firstItem="6mm-gF-sab" firstAttribute="centerX" secondItem="e4q-i6-XhB" secondAttribute="centerX" constant="0.5" id="t3l-51-Lzy"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="centerX" secondItem="roi-Vx-25F" secondAttribute="centerX" constant="1" id="t8R-am-m9a"/>
+                            <constraint firstItem="Yda-7k-mzR" firstAttribute="leading" secondItem="6mm-gF-sab" secondAttribute="leading" id="tXN-xX-3Ev"/>
+                            <constraint firstItem="xom-tr-8Lz" firstAttribute="top" secondItem="Nqm-7K-avg" secondAttribute="bottom" constant="26" id="tk8-1i-nAm"/>
+                            <constraint firstItem="v1n-We-GOG" firstAttribute="centerX" secondItem="DIN-UK-lQC" secondAttribute="centerX" constant="1.5" id="u4w-ht-frX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G8t-dh-2ZD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart" id="S6d-En-1wf"/>
+                    <connections>
+                        <outlet property="achievementsButton" destination="KMo-9b-tnD" id="1lz-QP-dTm"/>
+                        <outlet property="collectionView" destination="v1n-We-GOG" id="Jh4-Jc-U35"/>
+                        <outlet property="exerciseLabel" destination="84X-5l-hnn" id="u9R-jD-eHF"/>
+                        <outlet property="goButton" destination="Nqm-7K-avg" id="cV6-hO-CIW"/>
+                        <outlet property="goalLabel" destination="bXs-L9-Qzf" id="4ak-zi-pPo"/>
+                        <outlet property="menuButton" destination="pSA-wm-e3v" id="DPO-MF-wtj"/>
+                        <outlet property="textLabel" destination="DIN-UK-lQC" id="Zxr-n8-BLo"/>
+                        <outlet property="titleLabel" destination="roi-Vx-25F" id="djx-gj-gef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgY-uQ-dPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PxP-gB-SNW">
+            <objects>
+                <navigationController storyboardIdentifier="SettingsNavController" automaticallyAdjustsScrollViewInsets="NO" id="3Qb-gm-uMk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ztv-5j-VK0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fSL-aQ-cMS" kind="relationship" relationship="rootViewController" id="hBc-J4-zxR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6f-Le-QYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="-612"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="yJE-uz-uDm">
+            <objects>
+                <tableViewController storyboardIdentifier="Settings" id="fSL-aQ-cMS" customClass="Settings" customModule="CalmMeditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="yIO-Aa-Af8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="About Calm Meditation" id="LJk-cC-bEe" userLabel="About Calm Meditation">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="MuC-86-G9K">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MuC-86-G9K" id="EcR-8m-pZ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-0i-zA5">
+                                                    <rect key="frame" x="16" y="7.5" width="339" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="14.5"/>
+                                                    <state key="normal">
+                                                        <string key="title">Meditation has become a way of life for many people. The monks in the Solu Khumbu region of the Himalayan mountains in Nepal have practiced for 100's of years. Today, many of the monks there have reached Zen, a complete physical and spiritual state of relaxation and peace. Through daily practice, perhaps one day we will reach Zen too.</string>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="aboutButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="6FS-Jw-lHo"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DF0-0i-zA5" firstAttribute="centerX" secondItem="EcR-8m-pZ4" secondAttribute="centerX" constant="-2" id="6bd-YY-IZK"/>
+                                                <constraint firstItem="DF0-0i-zA5" firstAttribute="leading" secondItem="EcR-8m-pZ4" secondAttribute="leadingMargin" id="QXq-cU-g3u"/>
+                                                <constraint firstItem="DF0-0i-zA5" firstAttribute="centerY" secondItem="EcR-8m-pZ4" secondAttribute="centerY" id="ubO-dw-6T8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Premium" id="tyf-Nc-DgE">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="iNI-Nd-nTZ">
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iNI-Nd-nTZ" id="2Wm-dd-ZqH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-6p-iIo">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="upgradeButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="zkh-P5-qNo"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQD-vT-cua">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Upgrade">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="upgradeButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="YBC-X2-Bg7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZQD-vT-cua" firstAttribute="leading" secondItem="2Wm-dd-ZqH" secondAttribute="leadingMargin" constant="39" id="BFE-AP-EO1"/>
+                                                <constraint firstItem="ZQD-vT-cua" firstAttribute="centerY" secondItem="2Wm-dd-ZqH" secondAttribute="centerY" id="QYu-qL-5me"/>
+                                                <constraint firstItem="ZQD-vT-cua" firstAttribute="centerX" secondItem="2Wm-dd-ZqH" secondAttribute="centerX" constant="22.5" id="RCu-iu-AOc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="B2j-Sa-I9g">
+                                        <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B2j-Sa-I9g" id="u45-eW-Tq6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9a-aQ-fJP">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="restorePurchasesButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="hh8-Ot-lK1"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu5-s2-a39">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Restore Purchases">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="restorePurchasesButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="UkZ-N7-48q"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yu5-s2-a39" firstAttribute="centerY" secondItem="u45-eW-Tq6" secondAttribute="centerY" id="7Rm-E8-ltM"/>
+                                                <constraint firstItem="yu5-s2-a39" firstAttribute="leading" secondItem="u45-eW-Tq6" secondAttribute="leadingMargin" constant="39" id="7v7-mm-gkF"/>
+                                                <constraint firstItem="yu5-s2-a39" firstAttribute="centerX" secondItem="u45-eW-Tq6" secondAttribute="centerX" constant="22.5" id="mZ0-5d-AbJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="App" id="cNH-C8-Imo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="geL-3y-31z">
+                                        <rect key="frame" x="0.0" y="299.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="geL-3y-31z" id="9i7-4D-WW2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijk-3Y-oFj">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="learnableiOSAppButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="RaE-Jr-Zhc"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND2-i8-19d">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Learn to Code">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="learnableiOSAppButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="woW-eB-hfg"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ND2-i8-19d" firstAttribute="centerX" secondItem="9i7-4D-WW2" secondAttribute="centerX" constant="22.5" id="9de-4j-eq7"/>
+                                                <constraint firstItem="ND2-i8-19d" firstAttribute="leading" secondItem="9i7-4D-WW2" secondAttribute="leadingMargin" constant="39" id="9k7-cd-a77"/>
+                                                <constraint firstItem="ND2-i8-19d" firstAttribute="centerY" secondItem="9i7-4D-WW2" secondAttribute="centerY" id="CMl-gi-bEt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="KaJ-ew-89p">
+                                        <rect key="frame" x="0.0" y="343.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KaJ-ew-89p" id="bsl-Vx-hb6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfX-RJ-r5i">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reviewButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="Fyh-di-PHj"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-9u-dWY">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Review Calm Meditation">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reviewButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="Ah9-Rn-3wE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a3j-9u-dWY" firstAttribute="centerX" secondItem="bsl-Vx-hb6" secondAttribute="centerX" constant="22.5" id="4ZT-ad-gcg"/>
+                                                <constraint firstItem="a3j-9u-dWY" firstAttribute="leading" secondItem="bsl-Vx-hb6" secondAttribute="leadingMargin" constant="39" id="aIy-FE-t2F"/>
+                                                <constraint firstItem="a3j-9u-dWY" firstAttribute="centerY" secondItem="bsl-Vx-hb6" secondAttribute="centerY" id="hsk-Rc-cRA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="2U2-kJ-bTg">
+                                        <rect key="frame" x="0.0" y="387.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2U2-kJ-bTg" id="EcO-sQ-QqV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9N-AH-YoW">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="sendFeedbackButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="SXi-lQ-mUV"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPu-yA-baI">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Send Feedback">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="sendFeedbackButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="bod-CO-GTL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sPu-yA-baI" firstAttribute="leading" secondItem="EcO-sQ-QqV" secondAttribute="leadingMargin" constant="39" id="HE7-6E-quZ"/>
+                                                <constraint firstItem="sPu-yA-baI" firstAttribute="centerX" secondItem="EcO-sQ-QqV" secondAttribute="centerX" constant="22.5" id="WxN-Zn-ZsE"/>
+                                                <constraint firstItem="sPu-yA-baI" firstAttribute="centerY" secondItem="EcO-sQ-QqV" secondAttribute="centerY" id="yeR-5w-faF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="aMx-nK-1Ht">
+                                        <rect key="frame" x="0.0" y="431.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aMx-nK-1Ht" id="3FC-7Z-QG3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bH-U2-3GZ">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="aboutButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="hVc-RU-rko"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-yV-BJR">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Follow the Developer">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="aboutButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="AZt-Gs-3wF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iNa-yV-BJR" firstAttribute="centerY" secondItem="3FC-7Z-QG3" secondAttribute="centerY" id="b3f-be-3KO"/>
+                                                <constraint firstItem="iNa-yV-BJR" firstAttribute="leading" secondItem="3FC-7Z-QG3" secondAttribute="leadingMargin" constant="39" id="ebj-q7-Mup"/>
+                                                <constraint firstItem="iNa-yV-BJR" firstAttribute="centerX" secondItem="3FC-7Z-QG3" secondAttribute="centerX" constant="22.5" id="oY2-4Z-VNw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Share" footerTitle="© 2018 Calm Meditation" id="ZSy-GC-Jsf" userLabel="Share">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hqm-ZM-340">
+                                        <rect key="frame" x="0.0" y="539" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqm-ZM-340" id="c2x-cL-up1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlR-5t-3Ie">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="shareButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="xrW-Vy-bJq"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6T-B6-WcZ">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Share the love">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="shareButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="Osy-pN-E0h"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="R6T-B6-WcZ" firstAttribute="centerY" secondItem="c2x-cL-up1" secondAttribute="centerY" id="7OP-2h-hhk"/>
+                                                <constraint firstItem="R6T-B6-WcZ" firstAttribute="centerX" secondItem="c2x-cL-up1" secondAttribute="centerX" constant="22.5" id="bhG-Jr-heB"/>
+                                                <constraint firstItem="R6T-B6-WcZ" firstAttribute="leading" secondItem="c2x-cL-up1" secondAttribute="leadingMargin" constant="39" id="mbS-QJ-JR2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="CDs-88-Bny">
+                                        <rect key="frame" x="0.0" y="583" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CDs-88-Bny" id="6if-y1-fZi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRg-X6-4Yn">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="twitterButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="3vS-7Z-wAN"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrG-nS-cu0">
+                                                    <rect key="frame" x="55" y="7.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Follow us on Twitter">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="twitterButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="9Km-TG-fVA"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MrG-nS-cu0" firstAttribute="centerX" secondItem="6if-y1-fZi" secondAttribute="centerX" constant="22.5" id="AUa-m1-CDO"/>
+                                                <constraint firstItem="MrG-nS-cu0" firstAttribute="leading" secondItem="6if-y1-fZi" secondAttribute="leadingMargin" constant="39" id="b23-X3-wiV"/>
+                                                <constraint firstItem="MrG-nS-cu0" firstAttribute="centerY" secondItem="6if-y1-fZi" secondAttribute="centerY" id="xfa-Ug-W7l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="W5y-jM-J6U">
+                                        <rect key="frame" x="0.0" y="627" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W5y-jM-J6U" id="SD3-f0-cIV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzT-zX-qBz">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="instagramButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="f48-FM-Cyx"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BG-hn-VHk">
+                                                    <rect key="frame" x="47" y="7.5" width="326" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Heart us on Instagram">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="instagramButtonPressed" destination="fSL-aQ-cMS" eventType="touchUpInside" id="ux2-Xj-ta9"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4BG-hn-VHk" firstAttribute="centerY" secondItem="SD3-f0-cIV" secondAttribute="centerY" id="Yy7-cw-vEP"/>
+                                                <constraint firstItem="4BG-hn-VHk" firstAttribute="centerX" secondItem="SD3-f0-cIV" secondAttribute="centerX" constant="22.5" id="ZbH-g1-aQJ"/>
+                                                <constraint firstItem="4BG-hn-VHk" firstAttribute="leading" secondItem="SD3-f0-cIV" secondAttribute="leadingMargin" constant="39" id="kS3-c9-P7f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="fSL-aQ-cMS" id="lAb-Qh-AAZ"/>
+                            <outlet property="delegate" destination="fSL-aQ-cMS" id="aiR-dK-Fqx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" leftItemsSupplementBackButton="YES" id="jpn-nR-5xM">
+                        <barButtonItem key="leftBarButtonItem" id="kG8-PZ-erm">
+                            <color key="tintColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="backButtonPressed" destination="fSL-aQ-cMS" id="3M8-SE-gh7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutButton" destination="DF0-0i-zA5" id="S0C-X1-bK5"/>
+                        <outlet property="backButton" destination="kG8-PZ-erm" id="UQZ-63-cie"/>
+                        <outlet property="followDeveloperButtonIcon" destination="6bH-U2-3GZ" id="l7A-uv-jCK"/>
+                        <outlet property="instagramButtonIcon" destination="QzT-zX-qBz" id="Pqf-xv-X4o"/>
+                        <outlet property="learnableiOSAppButtonIcon" destination="Ijk-3Y-oFj" id="i86-uS-R4p"/>
+                        <outlet property="restorePurchasesButtonIcon" destination="e9a-aQ-fJP" id="492-ck-Xbj"/>
+                        <outlet property="reviewButtonIcon" destination="DfX-RJ-r5i" id="52D-pn-9tP"/>
+                        <outlet property="sendFeedbackButtonIcon" destination="A9N-AH-YoW" id="ZOm-73-09r"/>
+                        <outlet property="shareButtonIcon" destination="DlR-5t-3Ie" id="E0U-Ex-mjm"/>
+                        <outlet property="twitterButtonIcon" destination="LRg-X6-4Yn" id="aXf-lx-qQE"/>
+                        <outlet property="upgradeButtonIcon" destination="Zpj-6p-iIo" id="bYm-xe-jJo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fo-Cj-qJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.5999999999999" y="-612.14392803598207"/>
+        </scene>
+        <!--Choose Sound-->
+        <scene sceneID="jde-0y-e0S">
+            <objects>
+                <tableViewController storyboardIdentifier="ChooseSound" id="cxg-fo-HhZ" userLabel="Choose Sound" customClass="ChooseSound" customModule="CalmMeditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="e6P-66-bXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="vbK-RU-7Dv">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vbK-RU-7Dv" id="KHc-8C-TkB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cxg-fo-HhZ" id="xRH-OG-gV9"/>
+                            <outlet property="delegate" destination="cxg-fo-HhZ" id="GA7-fD-ksp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose Sound" id="Fiv-DR-cNx">
+                        <barButtonItem key="leftBarButtonItem" id="ho5-uA-zl5">
+                            <color key="tintColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="backButtonPressed" destination="cxg-fo-HhZ" id="QhI-2T-GyK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="ho5-uA-zl5" id="L4e-8y-Hg9"/>
+                        <segue destination="Jt5-A6-7KB" kind="unwind" identifier="soundUnwindSegue" unwindAction="unwindFromMediaView:" id="3ip-TE-Aum"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCF-OS-XfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Jt5-A6-7KB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3474" y="167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WVt-rw-tWN">
+            <objects>
+                <navigationController storyboardIdentifier="ChooseSoundNavController" automaticallyAdjustsScrollViewInsets="NO" id="31V-Z7-aqM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jIz-l1-R7t">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cxg-fo-HhZ" kind="relationship" relationship="rootViewController" id="rZ3-HX-znI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4E-ON-Dff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="167"/>
+        </scene>
+        <!--Upgrade Scene-->
+        <scene sceneID="bXW-uh-Gqr">
+            <objects>
+                <viewController storyboardIdentifier="Upgrade" id="Dei-x1-SaN" userLabel="Upgrade Scene" customClass="Upgrade" customModule="CalmMeditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iQS-Fq-XZ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZPk-mF-fYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g4v-oD-w5m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-zj-xgD" userLabel="Onboarding" customClass="PaperOnboarding" customModule="paper_onboarding">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.2872858942" green="0.14020672440000001" blue="0.30659055709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Dei-x1-SaN" id="aUO-u0-vAT"/>
+                                    <outlet property="delegate" destination="Dei-x1-SaN" id="ASL-U1-4cN"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xfm-zj-xgD" secondAttribute="width" id="FSd-0K-sHZ"/>
+                            <constraint firstItem="ZPk-mF-fYW" firstAttribute="top" secondItem="xfm-zj-xgD" secondAttribute="bottom" id="Vor-wq-7af"/>
+                            <constraint firstItem="xfm-zj-xgD" firstAttribute="top" secondItem="iQS-Fq-XZ4" secondAttribute="bottom" id="jqE-Ae-9Rq"/>
+                            <constraint firstItem="xfm-zj-xgD" firstAttribute="leading" secondItem="g4v-oD-w5m" secondAttribute="leading" id="qWX-AN-oW6"/>
+                            <constraint firstAttribute="height" secondItem="xfm-zj-xgD" secondAttribute="height" id="xDU-EJ-5Jw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UKq-wf-2mh"/>
+                    </view>
+                    <connections>
+                        <outlet property="onboarding" destination="xfm-zj-xgD" id="vvf-rK-1TY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSN-Av-i9m" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2774" y="-612"/>
+        </scene>
+        <!--Achievements-->
+        <scene sceneID="mPm-nf-cTd">
+            <objects>
+                <viewController storyboardIdentifier="Achievements" id="Sgd-YY-88O" userLabel="Achievements" customClass="Achievements" customModule="CalmMeditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4YA-fc-Cnv"/>
+                        <viewControllerLayoutGuide type="bottom" id="vjz-kc-bP5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pu1-Kn-pku">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIu-G0-jfi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FMS-EE-DN6"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Achievements" id="E9a-yE-eyY">
+                                        <barButtonItem key="leftBarButtonItem" id="Q5O-dV-8Go">
+                                            <color key="tintColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="backButtonPressed" destination="Sgd-YY-88O" id="4P9-hj-EZx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" id="31y-jT-q2z">
+                                            <color key="tintColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="infoButtonPressed" destination="Sgd-YY-88O" id="muD-Gw-QvY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-zG-ouL">
+                                <rect key="frame" x="0.0" y="197" width="375" height="493"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dnn-fj-s16">
+                                    <size key="itemSize" width="110" height="109"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achievementCollectionViewCell" id="Jo1-UH-W5I" customClass="AchievementCollectionViewCell" customModule="CalmMeditation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-sH-pCt">
+                                                    <rect key="frame" x="19" y="29" width="88" height="88"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="88" id="RHD-lW-q6g"/>
+                                                        <constraint firstAttribute="width" constant="88" id="ahz-tZ-EM3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSr-mR-umB">
+                                                    <rect key="frame" x="13.5" y="126" width="93" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="93" id="cQX-hJ-Ya9"/>
+                                                        <constraint firstAttribute="height" constant="21" id="xDt-rc-7Al"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1z5-Jx-zZz">
+                                                    <rect key="frame" x="34" y="47" width="52" height="52"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="52" id="JYj-wt-g8v"/>
+                                                        <constraint firstAttribute="height" constant="52" id="jhr-69-XGa"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="jSr-mR-umB" firstAttribute="centerX" secondItem="Jo1-UH-W5I" secondAttribute="centerX" constant="-2.5" id="3zb-S0-k7Q"/>
+                                            <constraint firstItem="1z5-Jx-zZz" firstAttribute="top" secondItem="eLv-sH-pCt" secondAttribute="top" constant="18" id="3zo-Cr-vzU"/>
+                                            <constraint firstItem="jSr-mR-umB" firstAttribute="top" secondItem="eLv-sH-pCt" secondAttribute="bottom" constant="9" id="KYL-7p-gIT"/>
+                                            <constraint firstItem="eLv-sH-pCt" firstAttribute="top" secondItem="Jo1-UH-W5I" secondAttribute="topMargin" constant="1" id="ZND-rK-sL6"/>
+                                            <constraint firstItem="eLv-sH-pCt" firstAttribute="centerX" secondItem="Jo1-UH-W5I" secondAttribute="centerX" constant="0.5" id="aQm-1O-6NG"/>
+                                            <constraint firstItem="1z5-Jx-zZz" firstAttribute="centerX" secondItem="eLv-sH-pCt" secondAttribute="centerX" constant="-3" id="ybQ-PK-nff"/>
+                                        </constraints>
+                                        <size key="customSize" width="125" height="125"/>
+                                        <connections>
+                                            <outlet property="containerImageView" destination="eLv-sH-pCt" id="VdL-Wf-6WT"/>
+                                            <outlet property="iconImageView" destination="1z5-Jx-zZz" id="tv7-j6-m8R"/>
+                                            <outlet property="titleLabel" destination="jSr-mR-umB" id="stl-Rp-3Vt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Sgd-YY-88O" id="s6c-SN-3cc"/>
+                                    <outlet property="delegate" destination="Sgd-YY-88O" id="jUT-Hj-2FX"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ii-jc-36r">
+                                <rect key="frame" x="0.0" y="61" width="375" height="136"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="nDQ-Hn-247"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Je5-zG-ouL" firstAttribute="width" secondItem="pu1-Kn-pku" secondAttribute="width" id="3Xf-ZT-ybh"/>
+                            <constraint firstItem="WIu-G0-jfi" firstAttribute="width" secondItem="pu1-Kn-pku" secondAttribute="width" id="811-J6-MYb"/>
+                            <constraint firstItem="5Ii-jc-36r" firstAttribute="leading" secondItem="WIu-G0-jfi" secondAttribute="leading" id="GVm-O6-OXa"/>
+                            <constraint firstItem="Je5-zG-ouL" firstAttribute="top" secondItem="WIu-G0-jfi" secondAttribute="bottom" constant="133" id="LPU-xT-SEV"/>
+                            <constraint firstItem="WIu-G0-jfi" firstAttribute="leading" secondItem="pu1-Kn-pku" secondAttribute="leading" id="Ld7-KO-EU4"/>
+                            <constraint firstItem="5Ii-jc-36r" firstAttribute="top" secondItem="4YA-fc-Cnv" secondAttribute="bottom" constant="41" id="Noo-Fk-rdY"/>
+                            <constraint firstItem="WIu-G0-jfi" firstAttribute="leading" secondItem="Je5-zG-ouL" secondAttribute="leading" id="Q4s-s0-eXP"/>
+                            <constraint firstItem="Je5-zG-ouL" firstAttribute="height" secondItem="pu1-Kn-pku" secondAttribute="height" constant="-174" id="RUw-yU-nVp"/>
+                            <constraint firstItem="WIu-G0-jfi" firstAttribute="top" secondItem="4YA-fc-Cnv" secondAttribute="bottom" id="g0r-OK-Xp5"/>
+                            <constraint firstItem="5Ii-jc-36r" firstAttribute="trailing" secondItem="WIu-G0-jfi" secondAttribute="trailing" id="p2l-9f-rG4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U9w-Rj-uq3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="achievements" id="HQl-YW-MaJ"/>
+                    <connections>
+                        <outlet property="backButton" destination="Q5O-dV-8Go" id="wn4-Qs-0ZZ"/>
+                        <outlet property="collectionView" destination="Je5-zG-ouL" id="mmw-UB-Tl0"/>
+                        <outlet property="infoButton" destination="31y-jT-q2z" id="Jjj-Sc-HgD"/>
+                        <outlet property="topView" destination="5Ii-jc-36r" id="Puv-2e-oYF"/>
+                        <outlet property="view" destination="pu1-Kn-pku" id="GDe-OX-GSP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a97-KL-C58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="-612.14392803598207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="5184" height="3456"/>
+        <image name="achievements" width="16" height="16"/>
+        <image name="heart" width="16" height="16"/>
+    </resources>
+</document>

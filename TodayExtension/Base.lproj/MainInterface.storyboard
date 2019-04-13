@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nqx-g1-JU1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamProRegular.ttf">
+            <string>GothamPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--TodayView-->
+        <scene sceneID="HmO-6v-sFS">
+            <objects>
+                <viewController storyboardIdentifier="TodayViewController" id="nqx-g1-JU1" userLabel="TodayView" customClass="TodayMeditations" customModule="TodayExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t8d-N8-lKP"/>
+                        <viewControllerLayoutGuide type="bottom" id="vpW-1R-WKq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BbS-rp-B3w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ck-pm8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="SYv-On-0Xn" userLabel="Cell" customClass="TodayMeditationCell" customModule="TodayExtension" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SYv-On-0Xn" id="V9T-Yg-1hE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tIR-bw-ZI8" customClass="LCircleImageView" customModule="TodayExtension" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="4" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="K0q-J0-2w2"/>
+                                                        <constraint firstAttribute="width" constant="35" id="UlZ-GR-WIC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJU-Ld-fHI">
+                                                    <rect key="frame" x="63" y="4" width="297" height="34"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tIR-bw-ZI8" firstAttribute="centerY" secondItem="V9T-Yg-1hE" secondAttribute="centerY" id="1rk-Mr-Vuw"/>
+                                                <constraint firstItem="tIR-bw-ZI8" firstAttribute="leading" secondItem="V9T-Yg-1hE" secondAttribute="leadingMargin" constant="-3" id="MKP-ZL-IQZ"/>
+                                                <constraint firstItem="hJU-Ld-fHI" firstAttribute="leading" secondItem="tIR-bw-ZI8" secondAttribute="trailing" constant="16" id="XSx-lB-Ecn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="tIR-bw-ZI8" firstAttribute="centerY" secondItem="SYv-On-0Xn" secondAttribute="centerY" id="kDC-Sa-hfe"/>
+                                            <constraint firstItem="hJU-Ld-fHI" firstAttribute="centerY" secondItem="SYv-On-0Xn" secondAttribute="centerY" constant="-1" id="oRk-he-TqT"/>
+                                        </constraints>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="bgImageView" destination="tIR-bw-ZI8" id="M28-vF-tS2"/>
+                                            <outlet property="titleLabel" destination="hJU-Ld-fHI" id="o2R-uN-hcO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nqx-g1-JU1" id="haN-G3-3yy"/>
+                                    <outlet property="delegate" destination="nqx-g1-JU1" id="lcf-tV-eux"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Sc-ck-pm8" firstAttribute="bottom" secondItem="vpW-1R-WKq" secondAttribute="top" id="4bh-0K-leU"/>
+                            <constraint firstItem="3Sc-ck-pm8" firstAttribute="leading" secondItem="BbS-rp-B3w" secondAttribute="leading" id="O1U-Kk-1BR"/>
+                            <constraint firstAttribute="trailing" secondItem="3Sc-ck-pm8" secondAttribute="trailing" id="buJ-vR-KAv"/>
+                            <constraint firstItem="3Sc-ck-pm8" firstAttribute="top" secondItem="BbS-rp-B3w" secondAttribute="top" id="yBd-3Y-rLV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="04p-uL-9qg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swift" id="0D9-Uc-Vu0">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="l3w-BB-f1l"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3Sc-ck-pm8" id="3lk-jt-47C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lU-Qz-HAU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="810.94452773613204"/>
+        </scene>
+    </scenes>
+</document>

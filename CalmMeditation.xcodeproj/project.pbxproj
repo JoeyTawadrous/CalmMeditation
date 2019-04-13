@@ -1,0 +1,1218 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520C84B021386BD500BB0E3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0F72129D40A00E6E311 /* Constants.swift */; };
+		520C84B12138744300BB0E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524CD0DA2129CF3800E6E311 /* Assets.xcassets */; };
+		52377305213727F800E49221 /* WatchMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52377304213727F800E49221 /* WatchMeditation.swift */; };
+		52377306213729EE00E49221 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0FD2129DC1800E6E311 /* CustomClasses.swift */; };
+		5237730721372A4200E49221 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0F72129D40A00E6E311 /* Constants.swift */; };
+		5237730821372A9100E49221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524CD0DA2129CF3800E6E311 /* Assets.xcassets */; };
+		523773122137316B00E49221 /* WatchMeditations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523773112137316B00E49221 /* WatchMeditations.swift */; };
+		523773162137352100E49221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523773152137352100E49221 /* Assets.xcassets */; };
+		524CD0D42129CF3500E6E311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0D32129CF3500E6E311 /* AppDelegate.swift */; };
+		524CD0D92129CF3500E6E311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CD0D72129CF3500E6E311 /* Main.storyboard */; };
+		524CD0DB2129CF3800E6E311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524CD0DA2129CF3800E6E311 /* Assets.xcassets */; };
+		524CD0DE2129CF3800E6E311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CD0DC2129CF3800E6E311 /* LaunchScreen.storyboard */; };
+		524CD0E92129CF3800E6E311 /* MeditationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0E82129CF3800E6E311 /* MeditationUITests.swift */; };
+		524CD0F42129D3CE00E6E311 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0F32129D3CE00E6E311 /* Meditation.swift */; };
+		524CD0F62129D3D900E6E311 /* RunMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0F52129D3D900E6E311 /* RunMeditation.swift */; };
+		524CD0F82129D40A00E6E311 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0F72129D40A00E6E311 /* Constants.swift */; };
+		524CD0FA2129D95B00E6E311 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0F92129D95B00E6E311 /* Utils.swift */; };
+		524CD0FC2129DAA900E6E311 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0FB2129DAA900E6E311 /* Extensions.swift */; };
+		524CD0FE2129DC1800E6E311 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD0FD2129DC1800E6E311 /* CustomClasses.swift */; };
+		524CD1032129DC6500E6E311 /* GothamProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524CD0FF2129DC6300E6E311 /* GothamProMedium.ttf */; };
+		524CD1042129DC6500E6E311 /* GothamProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524CD1002129DC6300E6E311 /* GothamProBlack.ttf */; };
+		524CD1052129DC6500E6E311 /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524CD1012129DC6400E6E311 /* GothamProRegular.ttf */; };
+		524CD1062129DC6500E6E311 /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524CD1022129DC6400E6E311 /* GothamProBold.ttf */; };
+		524CD1162129E32A00E6E311 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD1152129E32900E6E311 /* SnapshotHelper.swift */; };
+		524CD11F212B1CE600E6E311 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524CD11E212B1CE600E6E311 /* NotificationCenter.framework */; };
+		524CD122212B1CE600E6E311 /* TodayMeditations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD121212B1CE600E6E311 /* TodayMeditations.swift */; };
+		524CD125212B1CE600E6E311 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CD123212B1CE600E6E311 /* MainInterface.storyboard */; };
+		524CD129212B1CE600E6E311 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 524CD11D212B1CE600E6E311 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		525830C62145439300CD8872 /* ChooseSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525830C52145439300CD8872 /* ChooseSound.swift */; };
+		5260824C214703C2009CEDE3 /* Cave_Water_Dripping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260823E214703BC009CEDE3 /* Cave_Water_Dripping.mp3 */; };
+		5260824D214703C2009CEDE3 /* Summer_Birds_Singing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260823F214703BC009CEDE3 /* Summer_Birds_Singing.mp3 */; };
+		5260824E214703C2009CEDE3 /* Crackling_Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608240214703BC009CEDE3 /* Crackling_Fire.mp3 */; };
+		5260824F214703C2009CEDE3 /* Majestic_Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608241214703BD009CEDE3 /* Majestic_Rain.mp3 */; };
+		52608250214703C2009CEDE3 /* Thunderstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608242214703BD009CEDE3 /* Thunderstorm.mp3 */; };
+		52608251214703C2009CEDE3 /* Jungle_Birds_And_Insects.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608243214703BD009CEDE3 /* Jungle_Birds_And_Insects.mp3 */; };
+		52608252214703C2009CEDE3 /* Jungle_River.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608244214703BE009CEDE3 /* Jungle_River.mp3 */; };
+		52608253214703C2009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608245214703BE009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 */; };
+		52608254214703C2009CEDE3 /* Hailstones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608246214703BE009CEDE3 /* Hailstones.mp3 */; };
+		52608255214703C2009CEDE3 /* Running_Cave_Water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608247214703BE009CEDE3 /* Running_Cave_Water.mp3 */; };
+		52608256214703C2009CEDE3 /* Rainforest_Ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608248214703BF009CEDE3 /* Rainforest_Ambience.mp3 */; };
+		52608257214703C2009CEDE3 /* Rocky Shore Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608249214703C0009CEDE3 /* Rocky Shore Waves.mp3 */; };
+		52608258214703C2009CEDE3 /* Nightime_Jungle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260824A214703C1009CEDE3 /* Nightime_Jungle.mp3 */; };
+		52608259214703C2009CEDE3 /* Ocean_Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260824B214703C1009CEDE3 /* Ocean_Waves.mp3 */; };
+		5260825A214703F0009CEDE3 /* Cave_Water_Dripping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260823E214703BC009CEDE3 /* Cave_Water_Dripping.mp3 */; };
+		5260825B214703F0009CEDE3 /* Crackling_Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608240214703BC009CEDE3 /* Crackling_Fire.mp3 */; };
+		5260825C214703F0009CEDE3 /* Hailstones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608246214703BE009CEDE3 /* Hailstones.mp3 */; };
+		5260825D214703F0009CEDE3 /* Jungle_Birds_And_Insects.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608243214703BD009CEDE3 /* Jungle_Birds_And_Insects.mp3 */; };
+		5260825E214703F0009CEDE3 /* Jungle_River.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608244214703BE009CEDE3 /* Jungle_River.mp3 */; };
+		5260825F214703F0009CEDE3 /* Majestic_Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608241214703BD009CEDE3 /* Majestic_Rain.mp3 */; };
+		52608260214703F0009CEDE3 /* Nightime_Jungle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260824A214703C1009CEDE3 /* Nightime_Jungle.mp3 */; };
+		52608261214703F0009CEDE3 /* Ocean_Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260824B214703C1009CEDE3 /* Ocean_Waves.mp3 */; };
+		52608262214703F0009CEDE3 /* Rainforest_Ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608248214703BF009CEDE3 /* Rainforest_Ambience.mp3 */; };
+		52608263214703F0009CEDE3 /* Rocky Shore Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608249214703C0009CEDE3 /* Rocky Shore Waves.mp3 */; };
+		52608264214703F0009CEDE3 /* Running_Cave_Water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608247214703BE009CEDE3 /* Running_Cave_Water.mp3 */; };
+		52608265214703F0009CEDE3 /* Summer_Birds_Singing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5260823F214703BC009CEDE3 /* Summer_Birds_Singing.mp3 */; };
+		52608266214703F0009CEDE3 /* Thunderstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608242214703BD009CEDE3 /* Thunderstorm.mp3 */; };
+		52608267214703F0009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52608245214703BE009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 */; };
+		526472B6218C9D3400427299 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526472B5218C9D3400427299 /* Achievements.swift */; };
+		526472B8218C9DF500427299 /* ProgressMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526472B7218C9DF500427299 /* ProgressMananger.swift */; };
+		52BC3C652133375F0093C029 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BC3C632133375F0093C029 /* Interface.storyboard */; };
+		52BC3C6E213337610093C029 /* WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52BC3C6D213337610093C029 /* WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52BC3C75213337610093C029 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC3C74213337610093C029 /* ExtensionDelegate.swift */; };
+		52BC3C7E213337620093C029 /* WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 52BC3C612133375F0093C029 /* WatchKit.app */; };
+		52C703342142D95200AC839F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C703332142D95200AC839F /* Settings.swift */; };
+		52C7034621442B2900AC839F /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7034521442B2900AC839F /* Purchase.swift */; };
+		52C7035021442B9800AC839F /* Upgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7034F21442B9800AC839F /* Upgrade.swift */; };
+		52C7035621442D8B00AC839F /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7035521442D8B00AC839F /* Dialogs.swift */; };
+		670E52CFA16807ABC85935A0 /* Pods_Meditation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520DE0B7213ADD9400BC4181 /* Pods_Meditation.framework */; };
+		A79902F9924D5DF0629637E6 /* Pods_Meditation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAC9632EEA9A61F9D441314 /* Pods_Meditation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		524CD0E52129CF3800E6E311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524CD0C82129CF3500E6E311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524CD0CF2129CF3500E6E311;
+			remoteInfo = Meditation;
+		};
+		524CD127212B1CE600E6E311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524CD0C82129CF3500E6E311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524CD11C212B1CE600E6E311;
+			remoteInfo = TodayExtension;
+		};
+		52BC3C6F213337610093C029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524CD0C82129CF3500E6E311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BC3C6C213337610093C029;
+			remoteInfo = "WatchKit Extension";
+		};
+		52BC3C7C213337620093C029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524CD0C82129CF3500E6E311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BC3C602133375F0093C029;
+			remoteInfo = WatchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		524CD12D212B1CE600E6E311 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				524CD129212B1CE600E6E311 /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BC3C84213337620093C029 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52BC3C6E213337610093C029 /* WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BC3C86213337620093C029 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				52BC3C7E213337620093C029 /* WatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F0426F2A2D943613DDEDC6D /* Pods-Meditation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation/Pods-Meditation.debug.xcconfig"; sourceTree = "<group>"; };
+		520DE0B7213ADD9400BC4181 /* Pods_Meditation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Meditation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52377304213727F800E49221 /* WatchMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMeditation.swift; sourceTree = "<group>"; };
+		523773112137316B00E49221 /* WatchMeditations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMeditations.swift; sourceTree = "<group>"; };
+		523773152137352100E49221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		524CD0D02129CF3500E6E311 /* CalmMeditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalmMeditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CD0D32129CF3500E6E311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		524CD0D82129CF3500E6E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		524CD0DA2129CF3800E6E311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		524CD0DD2129CF3800E6E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		524CD0E42129CF3800E6E311 /* CalmMeditationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalmMeditationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CD0E82129CF3800E6E311 /* MeditationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationUITests.swift; sourceTree = "<group>"; };
+		524CD0EA2129CF3800E6E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524CD0F32129D3CE00E6E311 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		524CD0F52129D3D900E6E311 /* RunMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunMeditation.swift; sourceTree = "<group>"; };
+		524CD0F72129D40A00E6E311 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		524CD0F92129D95B00E6E311 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		524CD0FB2129DAA900E6E311 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		524CD0FD2129DC1800E6E311 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
+		524CD0FF2129DC6300E6E311 /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
+		524CD1002129DC6300E6E311 /* GothamProBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlack.ttf; sourceTree = "<group>"; };
+		524CD1012129DC6400E6E311 /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
+		524CD1022129DC6400E6E311 /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
+		524CD1152129E32900E6E311 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		524CD11D212B1CE600E6E311 /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CD11E212B1CE600E6E311 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		524CD121212B1CE600E6E311 /* TodayMeditations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMeditations.swift; sourceTree = "<group>"; };
+		524CD124212B1CE600E6E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		524CD126212B1CE600E6E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525830C52145439300CD8872 /* ChooseSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSound.swift; sourceTree = "<group>"; };
+		5260823E214703BC009CEDE3 /* Cave_Water_Dripping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cave_Water_Dripping.mp3; sourceTree = "<group>"; };
+		5260823F214703BC009CEDE3 /* Summer_Birds_Singing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Summer_Birds_Singing.mp3; sourceTree = "<group>"; };
+		52608240214703BC009CEDE3 /* Crackling_Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crackling_Fire.mp3; sourceTree = "<group>"; };
+		52608241214703BD009CEDE3 /* Majestic_Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Majestic_Rain.mp3; sourceTree = "<group>"; };
+		52608242214703BD009CEDE3 /* Thunderstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Thunderstorm.mp3; sourceTree = "<group>"; };
+		52608243214703BD009CEDE3 /* Jungle_Birds_And_Insects.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jungle_Birds_And_Insects.mp3; sourceTree = "<group>"; };
+		52608244214703BE009CEDE3 /* Jungle_River.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jungle_River.mp3; sourceTree = "<group>"; };
+		52608245214703BE009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waves_Breaking_Onto_Shore.mp3; sourceTree = "<group>"; };
+		52608246214703BE009CEDE3 /* Hailstones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hailstones.mp3; sourceTree = "<group>"; };
+		52608247214703BE009CEDE3 /* Running_Cave_Water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Running_Cave_Water.mp3; sourceTree = "<group>"; };
+		52608248214703BF009CEDE3 /* Rainforest_Ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rainforest_Ambience.mp3; sourceTree = "<group>"; };
+		52608249214703C0009CEDE3 /* Rocky Shore Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rocky Shore Waves.mp3"; sourceTree = "<group>"; };
+		5260824A214703C1009CEDE3 /* Nightime_Jungle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nightime_Jungle.mp3; sourceTree = "<group>"; };
+		5260824B214703C1009CEDE3 /* Ocean_Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ocean_Waves.mp3; sourceTree = "<group>"; };
+		526472B5218C9D3400427299 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		526472B7218C9DF500427299 /* ProgressMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMananger.swift; sourceTree = "<group>"; };
+		52BC3C612133375F0093C029 /* WatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BC3C642133375F0093C029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		52BC3C68213337610093C029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BC3C6D213337610093C029 /* WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BC3C74213337610093C029 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		52BC3C7A213337620093C029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C703332142D95200AC839F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		52C7034521442B2900AC839F /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		52C7034F21442B9800AC839F /* Upgrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upgrade.swift; sourceTree = "<group>"; };
+		52C7035521442D8B00AC839F /* Dialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogs.swift; sourceTree = "<group>"; };
+		52F45518212B1F3E005D5433 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F4551E21305A78005D5433 /* Meditation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Meditation.entitlements; sourceTree = "<group>"; };
+		9EAD0DEDA39A6812B91C782F /* Pods_MeditationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAC9632EEA9A61F9D441314 /* Pods_Meditation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49B285A854089E5C3CB5DAD /* Pods-Meditation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation/Pods-Meditation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		524CD0CD2129CF3500E6E311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79902F9924D5DF0629637E6 /* Pods_Meditation.framework in Frameworks */,
+				670E52CFA16807ABC85935A0 /* Pods_Meditation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CD0E12129CF3800E6E311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CD11A212B1CE600E6E311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CD11F212B1CE600E6E311 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BC3C6A213337610093C029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BC46B4CC014D4513515AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520C84AF21386B7E00BB0E3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52BC3C7A213337620093C029 /* Info.plist */,
+				52BC3C74213337610093C029 /* ExtensionDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		524CD0C72129CF3500E6E311 = {
+			isa = PBXGroup;
+			children = (
+				524CD0D22129CF3500E6E311 /* Meditation */,
+				524CD120212B1CE600E6E311 /* TodayExtension */,
+				52BC3C622133375F0093C029 /* WatchKit */,
+				52BC3C71213337610093C029 /* WatchKit Extension */,
+				524CD0E72129CF3800E6E311 /* MeditationUITests */,
+				524CD0D12129CF3500E6E311 /* Products */,
+				B16DBEBDE55E6D37006338E7 /* Pods */,
+				AF309B85C6FCB580A97A74FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		524CD0D12129CF3500E6E311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524CD0D02129CF3500E6E311 /* CalmMeditation.app */,
+				524CD0E42129CF3800E6E311 /* CalmMeditationUITests.xctest */,
+				524CD11D212B1CE600E6E311 /* TodayExtension.appex */,
+				52BC3C612133375F0093C029 /* WatchKit.app */,
+				52BC3C6D213337610093C029 /* WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		524CD0D22129CF3500E6E311 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				52F4551E21305A78005D5433 /* Meditation.entitlements */,
+				524CD117212B1AA500E6E311 /* Resources */,
+				524CD118212B1AF300E6E311 /* Utils */,
+				52C7034A21442B5900AC839F /* Purchase */,
+				524CD0D72129CF3500E6E311 /* Main.storyboard */,
+				524CD0DA2129CF3800E6E311 /* Assets.xcassets */,
+				524CD0D32129CF3500E6E311 /* AppDelegate.swift */,
+				526472BA218E05E300427299 /* Meditation */,
+				526472B9218E05AB00427299 /* Achievements */,
+				52C703332142D95200AC839F /* Settings.swift */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		524CD0E72129CF3800E6E311 /* MeditationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				524CD0E82129CF3800E6E311 /* MeditationUITests.swift */,
+				524CD1152129E32900E6E311 /* SnapshotHelper.swift */,
+				524CD0EA2129CF3800E6E311 /* Info.plist */,
+			);
+			path = MeditationUITests;
+			sourceTree = "<group>";
+		};
+		524CD1072129DCA100E6E311 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				524CD1002129DC6300E6E311 /* GothamProBlack.ttf */,
+				524CD1022129DC6400E6E311 /* GothamProBold.ttf */,
+				524CD0FF2129DC6300E6E311 /* GothamProMedium.ttf */,
+				524CD1012129DC6400E6E311 /* GothamProRegular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		524CD1142129DCB500E6E311 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5260823E214703BC009CEDE3 /* Cave_Water_Dripping.mp3 */,
+				52608240214703BC009CEDE3 /* Crackling_Fire.mp3 */,
+				52608246214703BE009CEDE3 /* Hailstones.mp3 */,
+				52608243214703BD009CEDE3 /* Jungle_Birds_And_Insects.mp3 */,
+				52608244214703BE009CEDE3 /* Jungle_River.mp3 */,
+				52608241214703BD009CEDE3 /* Majestic_Rain.mp3 */,
+				5260824A214703C1009CEDE3 /* Nightime_Jungle.mp3 */,
+				5260824B214703C1009CEDE3 /* Ocean_Waves.mp3 */,
+				52608248214703BF009CEDE3 /* Rainforest_Ambience.mp3 */,
+				52608249214703C0009CEDE3 /* Rocky Shore Waves.mp3 */,
+				52608247214703BE009CEDE3 /* Running_Cave_Water.mp3 */,
+				5260823F214703BC009CEDE3 /* Summer_Birds_Singing.mp3 */,
+				52608242214703BD009CEDE3 /* Thunderstorm.mp3 */,
+				52608245214703BE009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		524CD117212B1AA500E6E311 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				524CD1072129DCA100E6E311 /* Fonts */,
+				524CD1142129DCB500E6E311 /* Sounds */,
+				52F45518212B1F3E005D5433 /* Info.plist */,
+				524CD0DC2129CF3800E6E311 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		524CD118212B1AF300E6E311 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				524CD0F72129D40A00E6E311 /* Constants.swift */,
+				524CD0FD2129DC1800E6E311 /* CustomClasses.swift */,
+				52C7035521442D8B00AC839F /* Dialogs.swift */,
+				524CD0FB2129DAA900E6E311 /* Extensions.swift */,
+				524CD0F92129D95B00E6E311 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		524CD120212B1CE600E6E311 /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				524CD121212B1CE600E6E311 /* TodayMeditations.swift */,
+				524CD123212B1CE600E6E311 /* MainInterface.storyboard */,
+				524CD126212B1CE600E6E311 /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		526472B9218E05AB00427299 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				526472B5218C9D3400427299 /* Achievements.swift */,
+				526472B7218C9DF500427299 /* ProgressMananger.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		526472BA218E05E300427299 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				524CD0F32129D3CE00E6E311 /* Meditation.swift */,
+				524CD0F52129D3D900E6E311 /* RunMeditation.swift */,
+				525830C52145439300CD8872 /* ChooseSound.swift */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		52BC3C622133375F0093C029 /* WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				52BC3C632133375F0093C029 /* Interface.storyboard */,
+				523773152137352100E49221 /* Assets.xcassets */,
+				52BC3C68213337610093C029 /* Info.plist */,
+			);
+			path = WatchKit;
+			sourceTree = "<group>";
+		};
+		52BC3C71213337610093C029 /* WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				520C84AF21386B7E00BB0E3D /* Resources */,
+				523773112137316B00E49221 /* WatchMeditations.swift */,
+				52377304213727F800E49221 /* WatchMeditation.swift */,
+			);
+			path = "WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		52C7034A21442B5900AC839F /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				52C7034521442B2900AC839F /* Purchase.swift */,
+				52C7034F21442B9800AC839F /* Upgrade.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		AF309B85C6FCB580A97A74FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520DE0B7213ADD9400BC4181 /* Pods_Meditation.framework */,
+				9FAC9632EEA9A61F9D441314 /* Pods_Meditation.framework */,
+				9EAD0DEDA39A6812B91C782F /* Pods_MeditationUITests.framework */,
+				524CD11E212B1CE600E6E311 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B16DBEBDE55E6D37006338E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F0426F2A2D943613DDEDC6D /* Pods-Meditation.debug.xcconfig */,
+				E49B285A854089E5C3CB5DAD /* Pods-Meditation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		524CD0CF2129CF3500E6E311 /* CalmMeditation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CD0ED2129CF3800E6E311 /* Build configuration list for PBXNativeTarget "CalmMeditation" */;
+			buildPhases = (
+				18BEF87A40C23EB19424A6CB /* [CP] Check Pods Manifest.lock */,
+				524CD0CC2129CF3500E6E311 /* Sources */,
+				524CD0CD2129CF3500E6E311 /* Frameworks */,
+				524CD0CE2129CF3500E6E311 /* Resources */,
+				CB1C45ACAB25D908CD0A6412 /* [CP] Embed Pods Frameworks */,
+				524CD12D212B1CE600E6E311 /* Embed App Extensions */,
+				52BC3C86213337620093C029 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				524CD128212B1CE600E6E311 /* PBXTargetDependency */,
+				52BC3C7D213337620093C029 /* PBXTargetDependency */,
+			);
+			name = CalmMeditation;
+			productName = Meditation;
+			productReference = 524CD0D02129CF3500E6E311 /* CalmMeditation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		524CD0E32129CF3800E6E311 /* CalmMeditationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CD0F02129CF3800E6E311 /* Build configuration list for PBXNativeTarget "CalmMeditationUITests" */;
+			buildPhases = (
+				524CD0E02129CF3800E6E311 /* Sources */,
+				524CD0E12129CF3800E6E311 /* Frameworks */,
+				524CD0E22129CF3800E6E311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				524CD0E62129CF3800E6E311 /* PBXTargetDependency */,
+			);
+			name = CalmMeditationUITests;
+			productName = MeditationUITests;
+			productReference = 524CD0E42129CF3800E6E311 /* CalmMeditationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		524CD11C212B1CE600E6E311 /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CD12A212B1CE600E6E311 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				524CD119212B1CE600E6E311 /* Sources */,
+				524CD11A212B1CE600E6E311 /* Frameworks */,
+				524CD11B212B1CE600E6E311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 524CD11D212B1CE600E6E311 /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		52BC3C602133375F0093C029 /* WatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BC3C85213337620093C029 /* Build configuration list for PBXNativeTarget "WatchKit" */;
+			buildPhases = (
+				52BC3C5F2133375F0093C029 /* Resources */,
+				52BC3C84213337620093C029 /* Embed App Extensions */,
+				83BC46B4CC014D4513515AE9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52BC3C70213337610093C029 /* PBXTargetDependency */,
+			);
+			name = WatchKit;
+			productName = WatchKit;
+			productReference = 52BC3C612133375F0093C029 /* WatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		52BC3C6C213337610093C029 /* WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BC3C83213337620093C029 /* Build configuration list for PBXNativeTarget "WatchKit Extension" */;
+			buildPhases = (
+				52BC3C69213337610093C029 /* Sources */,
+				52BC3C6A213337610093C029 /* Frameworks */,
+				52BC3C6B213337610093C029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchKit Extension";
+			productName = "WatchKit Extension";
+			productReference = 52BC3C6D213337610093C029 /* WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		524CD0C82129CF3500E6E311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Joey Tawadrous";
+				TargetAttributes = {
+					524CD0CF2129CF3500E6E311 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					524CD0E32129CF3800E6E311 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 524CD0CF2129CF3500E6E311;
+					};
+					524CD11C212B1CE600E6E311 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					52BC3C602133375F0093C029 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					52BC3C6C213337610093C029 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 524CD0CB2129CF3500E6E311 /* Build configuration list for PBXProject "CalmMeditation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 524CD0C72129CF3500E6E311;
+			productRefGroup = 524CD0D12129CF3500E6E311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				524CD0CF2129CF3500E6E311 /* CalmMeditation */,
+				524CD0E32129CF3800E6E311 /* CalmMeditationUITests */,
+				524CD11C212B1CE600E6E311 /* TodayExtension */,
+				52BC3C602133375F0093C029 /* WatchKit */,
+				52BC3C6C213337610093C029 /* WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		524CD0CE2129CF3500E6E311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52608253214703C2009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 in Resources */,
+				52608252214703C2009CEDE3 /* Jungle_River.mp3 in Resources */,
+				524CD0DE2129CF3800E6E311 /* LaunchScreen.storyboard in Resources */,
+				5260824E214703C2009CEDE3 /* Crackling_Fire.mp3 in Resources */,
+				524CD1032129DC6500E6E311 /* GothamProMedium.ttf in Resources */,
+				5260824C214703C2009CEDE3 /* Cave_Water_Dripping.mp3 in Resources */,
+				52608258214703C2009CEDE3 /* Nightime_Jungle.mp3 in Resources */,
+				52608254214703C2009CEDE3 /* Hailstones.mp3 in Resources */,
+				524CD1062129DC6500E6E311 /* GothamProBold.ttf in Resources */,
+				52608250214703C2009CEDE3 /* Thunderstorm.mp3 in Resources */,
+				52608259214703C2009CEDE3 /* Ocean_Waves.mp3 in Resources */,
+				52608255214703C2009CEDE3 /* Running_Cave_Water.mp3 in Resources */,
+				52608257214703C2009CEDE3 /* Rocky Shore Waves.mp3 in Resources */,
+				5260824D214703C2009CEDE3 /* Summer_Birds_Singing.mp3 in Resources */,
+				524CD1042129DC6500E6E311 /* GothamProBlack.ttf in Resources */,
+				524CD0DB2129CF3800E6E311 /* Assets.xcassets in Resources */,
+				524CD0D92129CF3500E6E311 /* Main.storyboard in Resources */,
+				5260824F214703C2009CEDE3 /* Majestic_Rain.mp3 in Resources */,
+				52608256214703C2009CEDE3 /* Rainforest_Ambience.mp3 in Resources */,
+				524CD1052129DC6500E6E311 /* GothamProRegular.ttf in Resources */,
+				52608251214703C2009CEDE3 /* Jungle_Birds_And_Insects.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CD0E22129CF3800E6E311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CD11B212B1CE600E6E311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5237730821372A9100E49221 /* Assets.xcassets in Resources */,
+				524CD125212B1CE600E6E311 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BC3C5F2133375F0093C029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523773162137352100E49221 /* Assets.xcassets in Resources */,
+				52BC3C652133375F0093C029 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BC3C6B213337610093C029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5260825A214703F0009CEDE3 /* Cave_Water_Dripping.mp3 in Resources */,
+				5260825B214703F0009CEDE3 /* Crackling_Fire.mp3 in Resources */,
+				5260825C214703F0009CEDE3 /* Hailstones.mp3 in Resources */,
+				5260825D214703F0009CEDE3 /* Jungle_Birds_And_Insects.mp3 in Resources */,
+				5260825E214703F0009CEDE3 /* Jungle_River.mp3 in Resources */,
+				5260825F214703F0009CEDE3 /* Majestic_Rain.mp3 in Resources */,
+				52608260214703F0009CEDE3 /* Nightime_Jungle.mp3 in Resources */,
+				52608261214703F0009CEDE3 /* Ocean_Waves.mp3 in Resources */,
+				52608262214703F0009CEDE3 /* Rainforest_Ambience.mp3 in Resources */,
+				52608263214703F0009CEDE3 /* Rocky Shore Waves.mp3 in Resources */,
+				52608264214703F0009CEDE3 /* Running_Cave_Water.mp3 in Resources */,
+				52608265214703F0009CEDE3 /* Summer_Birds_Singing.mp3 in Resources */,
+				52608266214703F0009CEDE3 /* Thunderstorm.mp3 in Resources */,
+				52608267214703F0009CEDE3 /* Waves_Breaking_Onto_Shore.mp3 in Resources */,
+				520C84B12138744300BB0E3D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18BEF87A40C23EB19424A6CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meditation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1C45ACAB25D908CD0A6412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Meditation/Pods-Meditation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meditation/Pods-Meditation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		524CD0CC2129CF3500E6E311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CD0F82129D40A00E6E311 /* Constants.swift in Sources */,
+				524CD0F42129D3CE00E6E311 /* Meditation.swift in Sources */,
+				52C703342142D95200AC839F /* Settings.swift in Sources */,
+				524CD0F62129D3D900E6E311 /* RunMeditation.swift in Sources */,
+				524CD0D42129CF3500E6E311 /* AppDelegate.swift in Sources */,
+				52C7034621442B2900AC839F /* Purchase.swift in Sources */,
+				52C7035021442B9800AC839F /* Upgrade.swift in Sources */,
+				524CD0FA2129D95B00E6E311 /* Utils.swift in Sources */,
+				52C7035621442D8B00AC839F /* Dialogs.swift in Sources */,
+				526472B6218C9D3400427299 /* Achievements.swift in Sources */,
+				524CD0FC2129DAA900E6E311 /* Extensions.swift in Sources */,
+				526472B8218C9DF500427299 /* ProgressMananger.swift in Sources */,
+				524CD0FE2129DC1800E6E311 /* CustomClasses.swift in Sources */,
+				525830C62145439300CD8872 /* ChooseSound.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CD0E02129CF3800E6E311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CD0E92129CF3800E6E311 /* MeditationUITests.swift in Sources */,
+				524CD1162129E32A00E6E311 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CD119212B1CE600E6E311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5237730721372A4200E49221 /* Constants.swift in Sources */,
+				52377306213729EE00E49221 /* CustomClasses.swift in Sources */,
+				524CD122212B1CE600E6E311 /* TodayMeditations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BC3C69213337610093C029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520C84B021386BD500BB0E3D /* Constants.swift in Sources */,
+				52BC3C75213337610093C029 /* ExtensionDelegate.swift in Sources */,
+				52377305213727F800E49221 /* WatchMeditation.swift in Sources */,
+				523773122137316B00E49221 /* WatchMeditations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		524CD0E62129CF3800E6E311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524CD0CF2129CF3500E6E311 /* CalmMeditation */;
+			targetProxy = 524CD0E52129CF3800E6E311 /* PBXContainerItemProxy */;
+		};
+		524CD128212B1CE600E6E311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524CD11C212B1CE600E6E311 /* TodayExtension */;
+			targetProxy = 524CD127212B1CE600E6E311 /* PBXContainerItemProxy */;
+		};
+		52BC3C70213337610093C029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BC3C6C213337610093C029 /* WatchKit Extension */;
+			targetProxy = 52BC3C6F213337610093C029 /* PBXContainerItemProxy */;
+		};
+		52BC3C7D213337620093C029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BC3C602133375F0093C029 /* WatchKit */;
+			targetProxy = 52BC3C7C213337620093C029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		524CD0D72129CF3500E6E311 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524CD0D82129CF3500E6E311 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		524CD0DC2129CF3800E6E311 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524CD0DD2129CF3800E6E311 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		524CD123212B1CE600E6E311 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524CD124212B1CE600E6E311 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		52BC3C632133375F0093C029 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BC3C642133375F0093C029 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		524CD0EB2129CF3800E6E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		524CD0EC2129CF3800E6E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		524CD0EE2129CF3800E6E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0426F2A2D943613DDEDC6D /* Pods-Meditation.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Meditation/Meditation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = Meditation/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		524CD0EF2129CF3800E6E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49B285A854089E5C3CB5DAD /* Pods-Meditation.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Meditation/Meditation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = Meditation/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		524CD0F12129CF3800E6E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = MeditationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.MeditationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meditation;
+			};
+			name = Debug;
+		};
+		524CD0F22129CF3800E6E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = MeditationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.MeditationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meditation;
+			};
+			name = Release;
+		};
+		524CD12B212B1CE600E6E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation.todayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		524CD12C212B1CE600E6E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation.todayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52BC3C7F213337620093C029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				IBSC_MODULE = WatchKit_Extension;
+				INFOPLIST_FILE = WatchKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		52BC3C80213337620093C029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				IBSC_MODULE = WatchKit_Extension;
+				INFOPLIST_FILE = WatchKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		52BC3C81213337620093C029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = "WatchKit Extension/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		52BC3C82213337620093C029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = "WatchKit Extension/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.meditation.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		524CD0CB2129CF3500E6E311 /* Build configuration list for PBXProject "CalmMeditation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CD0EB2129CF3800E6E311 /* Debug */,
+				524CD0EC2129CF3800E6E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CD0ED2129CF3800E6E311 /* Build configuration list for PBXNativeTarget "CalmMeditation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CD0EE2129CF3800E6E311 /* Debug */,
+				524CD0EF2129CF3800E6E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CD0F02129CF3800E6E311 /* Build configuration list for PBXNativeTarget "CalmMeditationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CD0F12129CF3800E6E311 /* Debug */,
+				524CD0F22129CF3800E6E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CD12A212B1CE600E6E311 /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CD12B212B1CE600E6E311 /* Debug */,
+				524CD12C212B1CE600E6E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BC3C83213337620093C029 /* Build configuration list for PBXNativeTarget "WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BC3C81213337620093C029 /* Debug */,
+				52BC3C82213337620093C029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BC3C85213337620093C029 /* Build configuration list for PBXNativeTarget "WatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BC3C7F213337620093C029 /* Debug */,
+				52BC3C80213337620093C029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 524CD0C82129CF3500E6E311 /* Project object */;
+}

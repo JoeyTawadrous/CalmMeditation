@@ -1,0 +1,41 @@
+{
+    "default": {
+        "title": {
+            "color": "#fff",
+            "font": "assets/GothamProMedium.ttf"
+        },
+        "padding": 40,
+        "font_scale_factor": 0.2,
+        "show_complete_frame": true
+    },
+
+
+    "data": [{
+        "filter": "Meditation",
+        "background": "assets/orange.jpeg",
+        "title": {
+            "text": "Take a well deserved break \nfrom all your hard work"
+        }
+    },
+    {
+        "filter": "Achievements",
+        "background": "assets/dark_blue.jpeg",
+        "title": {
+            "text": "Meditate and unlock badges \nwhile you level up"
+        }
+    },
+    {
+        "filter": "Run",
+        "background": "assets/blue.jpeg",
+        "title": {
+            "text": "Enjoy the sounds of nature while \nfocusing on your breathing"
+        }
+    },
+    {
+        "filter": "TodayView",
+        "background": "assets/purple.jpeg",
+        "title": {
+            "text": "View all your meditations in a \nhandy today view widget"
+        }
+    }]
+}
